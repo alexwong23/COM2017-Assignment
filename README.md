@@ -14,21 +14,15 @@ The assignment will also be tested on its performance. Hence, a multithreaded so
 
 Challenges & Learning Points
 -------------------
-1. Data processing
-   - gene expression matrices
-     - convert Ensembl IDs to official gene symbols
-     - joined multiple matrices by common gene symbols
-     - transformations (e.g. log~2) and normalisations
-   - CEL files - into a gene expression matrix
+1. Assignment problem description is difficult to understand at first
+   - Draw and visualise the bytes found in the 3 read files
+     - directory_table
+     - file_data
+     - hash_data
 
-2. Model selection
-   - use of penalised logistic regression methods to account for the large p small n situation
-   - use of the Brier Score as metric to evaluate models for both Part 1 and Part 3 as a way to validate the results from the AUC
+2. Difficult to test byte blocks in C
 
-3. Shiny application
-   - Designing the interface
-   - Reading in raw files
-   - Create alternative models on the spot if the input data is not suitable for the trained model (e.g. genes from input patient data does not match filtered genes used in the trained model)
+3. Did not use FUSE module
 
 Files
 -------------------
